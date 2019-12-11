@@ -22,7 +22,7 @@ sudo /etc/init.d/ntp stop
 sudo ntpdate 192.168.1.198
 ```
 
-#### 3. On TX2 (via SSH X Forwarding - ssh -X nvidia@192.168.1.198)
+#### 3. On TX2 (via SSH X Forwarding: ssh -X nvidia@192.168.1.198)
 * Copy ROS_IP and ROS_MASTER_URI from ~/.bashrc
 * Run Autoware container
   ```bash
