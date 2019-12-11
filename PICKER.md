@@ -12,13 +12,13 @@
 ### Notes:
 * The rsa keys for logging in to the Pi and AMD are already saved in Minotaur.
 * To log into Pi, run the following on Minotaur
-```bash
-ssh $pi
-```
+  ```bash
+  ssh $pi
+  ```
 * To log into AMD, run the following on Minotaur
-```bash
-ssh $amd
-```
+  ```bash
+  ssh $amd
+  ```
 
 ### Step-by-step Instructions:
 #### 1. On Minotaur:
@@ -45,25 +45,25 @@ cd ~
 
 #### 3. On AMD (via SSH):
 * Terminal 1
-```bash
-cd ~
-sudo chmod 777 /dev/ttyUSB0
-roslaunch go navigation_with_laset_cut.launch
-```
+  ```bash
+  cd ~
+  sudo chmod 777 /dev/ttyUSB0
+  roslaunch go navigation_with_laset_cut.launch
+  ```
 * Terminal 2
-```bash
-rosrun pick_decision pick_decision_node
-```
+  ```bash
+  rosrun pick_decision pick_decision_node
+  ```
 * Terminal 3
-```bash
-cd ~
-./mux_videostream.sh
-```
+  ```bash
+  cd ~
+  ./mux_videostream.sh
+  ```
 * Terminal 4
-```bash
-cd ~
-./feedmux.sh 1
-```
+  ```bash
+  cd ~
+  ./feedmux.sh 1
+  ```
 
 #### 4. On Pi (via SSH)
 ```bash
@@ -73,15 +73,15 @@ roscd fastpick/nodes
 
 #### 5. On Minotaur:
 * Terminal 1
-```bash
-roscd amdmsgs/../scripts
-python3 tkintertest.py
-```
+  ```bash
+  roscd amdmsgs/../scripts
+  python3 tkintertest.py
+  ```
 * Terminal 2
-```bash
-roscd amdmsgs/../scripts
-./admin.py
-```
+  ```bash
+  roscd amdmsgs/../scripts
+  ./admin.py
+  ```
 * Terminal 3
   - Open RViz
   - Once RViz is open, File -> Open Config -> navigation.rviz (Ctrl + O -> navigation.rviz)
@@ -93,10 +93,10 @@ roscd amdmsgs/../scripts
   - Once RViz is open, File -> Open Config -> navigation.rviz (Ctrl + O -> navigation.rviz)
 
 * Terminal 2
-```bash
-cd ~
-./runClassifierROS.sh
-```
+  ```bash
+  cd ~
+  ./runClassifierROS.sh
+  ```
 **NOTE:** The ROS Classifier program has a memory leak issue. So it will crash if you run continuously for more than 15 minutes (estimated). Best practice is to stop this script and restart it just before the demo. Everything else will be unaffected.
 
 #### 7. On Minotaur:
@@ -109,12 +109,12 @@ cd ~
 **IMPORTANT**: Turn the Fiducial robot on only after the Picker robot is running and the TP-Link_E32E access point is up.
 * Log on to Fiducial robot Raspberry Pi - ubuntu@192.168.7.102
 * Terminal 1 (On Fiducal Pi)
-```bash
-roslaunch magni_demos simple_navigation.launch
-```
+  ```bash
+  roslaunch magni_demos simple_navigation.launch
+  ```
 * Terminal 2 (On Fiducial Pi)
-```bash
-cd ~/magni_goal_sender/scripts
-./goal_sender.py
-```
+  ```bash
+  cd ~/magni_goal_sender/scripts
+  ./goal_sender.py
+  ```
 * The robot will wait for 2 items to be dropped into the bin before starting to move
