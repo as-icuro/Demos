@@ -105,7 +105,7 @@ sudo ntpdate 192.168.1.198
   cd ~/ros_ws
   ./vlp_outside_relay.py
   ```
-* The robot shoudl start moving
+* The robot should start moving
 
 ### Notes
 * To check if velocity commands are being produced:
