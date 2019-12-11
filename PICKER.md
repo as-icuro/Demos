@@ -25,7 +25,7 @@ ssh $amd
 * Connect to TP-Link_E32E
 * Open ~/.bashrc
 * Find the comments "SAKE Robotics IP's" and uncomment the 3 lines under it
-* Comment out Autoware IP's if it is not already commented out
+* Comment out the 2 lines under "Autoware IP's" if it is not already commented out
 
 #### 2. On Pi (via SSH):
 ```bash
