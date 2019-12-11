@@ -36,7 +36,7 @@ sudo ntpdate 192.168.7.222
 roscd fastpick/nodes
 ./grbl_client.py h
 ```
-OR
+**OR**<br/>
 Simply run the following BASH script:
 ```bash
 cd ~
