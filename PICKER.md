@@ -48,7 +48,7 @@ cd ~
   ```bash
   cd ~
   sudo chmod 777 /dev/ttyUSB0
-  roslaunch go navigation_with_laset_cut.launch
+  roslaunch go navigation_with_laser_cut.launch
   ```
 * Terminal 2
   ```bash
