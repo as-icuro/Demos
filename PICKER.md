@@ -10,7 +10,7 @@
 * Pi  - 192.168.7.210
 
 ### Notes:
-* The rsa keys for logging in to the Pi and AMD are already saved in Minotaur.
+* The RSA keys for logging in to the Pi and AMD are already saved in Minotaur.
 * To log in to Pi, run the following on Minotaur
   ```bash
   ssh $pi
