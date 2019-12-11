@@ -11,11 +11,11 @@
 
 ### Notes:
 * The rsa keys for logging in to the Pi and AMD are already saved in Minotaur.
-* To log into Pi, run the following on Minotaur
+* To log in to Pi, run the following on Minotaur
   ```bash
   ssh $pi
   ```
-* To log into AMD, run the following on Minotaur
+* To log in to AMD, run the following on Minotaur
   ```bash
   ssh $amd
   ```
